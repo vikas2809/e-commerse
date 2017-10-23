@@ -1,0 +1,20 @@
+<div>
+  <h3 style="margin-top:100px;text-align:center;color:blue;">{{welcome}}</h3>
+    <!-- <p>{{input_id}}</p> -->
+  <!-- <app-product-detail-page></app-product-detail-page> -->
+  <div class="floating-box">
+    <div class="floating-box" *ngFor="let product of productDetails">
+            <a [routerLink]="['/product_detail',{userId:input_id,id:product.product_id,img:product.img_url,product_price:product.price,sell:product.sell_price,off:product.discount,group:product.category,amount:product.quantity}]"><img src={{product.img_url}}></a><br>
+            <p><b>{{product.category}}</b></p>
+        </div>
+</div>
+  <div class="sidenav">
+    <a [routerLink]="['/settings']" class="w3-bar-item w3-button">Settings</a>
+    <a [routerLink]="['/profile',{id:input_id} ]" class="w3-bar-item w3-button">My Profile</a>
+    <a [routerLink]="['/edit_profile',{id:input_id} ]" class="w3-bar-item w3-button">Edit Profile</a>
+    <a [routerLink]="['/logout']" class="w3-bar-item w3-button">Logout</a>
+  </div>
+</div>
+
+
+  <!-- this.router.navigate(['/dashboard',{id:this.valid_user[0].UserId}]); -->

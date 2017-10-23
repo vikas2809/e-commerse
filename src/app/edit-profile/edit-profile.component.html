@@ -1,0 +1,27 @@
+<div>
+    <form name="RegForm">
+                <h1 style="margin-left:100px;">{{title}}</h1>
+    Name:<br>
+    <input type="text" [(ngModel)]="user_name" name="name" /><br>
+
+    Email:<br>
+    <input type="email" [(ngModel)]="user_email" name="email" /><br>
+
+    Mobile:<br>
+    <input type="tel" [(ngModel)]="user_phone" name="mobile"/><br>
+
+    Password:<br>
+    <input type="password" [(ngModel)]="user_password" name="pass"  /><br>
+
+    DOB:<br>
+    <input type="date" [(ngModel)]="user_dob" name="dob" /><br>
+
+
+    <!-- <input type="button" value="cancel" (click)="cancel()"/> -->
+    <button (click)="cancel()">back</button>
+    <button (click)="onClickMe(user_name,user_email,user_phone,user_password,user_dob)">update</button>
+  </form>
+  <h1>
+    {{update_msg}}
+  </h1>
+</div>

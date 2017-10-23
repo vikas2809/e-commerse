@@ -1,0 +1,34 @@
+[
+    { "product_id":"1",
+    "img_url": "assets/image/product_1.jpg",
+    "price": 1500,
+    "sell_price":"Now 1000",
+    "discount": "Flat 500 off",
+    "category": "Men's Shoes",
+    "quantity": "10"
+    },
+    { "product_id":"2",
+        "img_url": "assets/image/product_2.jpg",
+        "price": 1500,
+        "sell_price":"Now 2500",
+        "discount": "Flat 800 off",
+        "category": "Grocery",
+        "quantity": "5"
+    },
+    { "product_id":"3",
+        "img_url": "assets/image/product_3.png",
+        "price": 1500,
+        "sell_price":"Now 20000",
+        "discount": "Flat 500 off",
+        "category": "High Resolution Camera",
+        "quantity": "20"
+    },
+    { "product_id":"4",
+        "img_url": "assets/image/product_4.jpg",
+        "price": 1500,
+        "sell_price":"Now 800",
+        "discount": "Flat 1000 off",
+        "category": "Headphones",
+        "quantity": "50"
+    }
+]

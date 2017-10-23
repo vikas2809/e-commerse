@@ -1,0 +1,17 @@
+<div>
+  <form>
+    <!-- <fieldset> -->
+    <h1>{{title}}</h1><br>
+  Email:<br>
+  <input type="text" name="email" [(ngModel)]="entered_email" required>
+  <br>
+  Password:<br>
+  <input type="password" name="password" [(ngModel)]="entered_password" required>
+  <br><br>
+  <input type="button" value="Cancel" (click)="cancel()">
+  <input type="button" value="Login" (click)="onAuthentication(entered_email,entered_password)">
+</form>
+<br>
+<h2 style="color:green;">{{ user }}</h2>
+<h2 style="color:green;"><a [routerLink]="['/sign']">{{ note }}</a></h2>
+</div>
